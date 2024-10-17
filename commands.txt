@@ -1,0 +1,12 @@
+https://jenkins-cd/job/MembersBackOffice/job/MBOProjectUATJiraCreator/build?delay=0sec
+
+https://mbo-backend.uat.lb.local/cluster/process/307
+
+git commit --allow-empty -m "[ci build] only"
+
+git clone --recurse-submodules <repository_url>
+
+git submodule update --init --recursive
+
+git submodule add git@mem-git-prod.lb.local:MBO/lib/sendmail.git vendor/mem-git-prod.lb.local/MBO/lib/sendmail
+ 
